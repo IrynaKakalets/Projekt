@@ -1,0 +1,139 @@
+body {
+    color: #1e5131;
+    background-color: #edf7f8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+a {
+    color: #1e5131;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: rgb(206, 239, 252);
+    margin: 0;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 36px;
+}
+
+a {
+    font-style: italic;
+}
+
+
+.katalogryb,
+.kontakt {
+    background-color: #bcd5c6d6;
+}
+
+
+.paticka {
+    background-color: #282425;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.foto-orybach {
+    width: 450px;
+    border-radius: 50%;
+    border: 2px solid #4a8057;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+.katalogryb img {
+    width: 32%;
+    border: 2px solid #4a8057;
+    border-radius: 10px;
+}
+
+.foto-lorem {
+    width: 350px;
+    border-radius: 0 50px 50px 50px;
+    float: right;
+    margin: 0 0 30px 30px;
+}
+
+.foto-kontakt {
+    width: 350px;
+    border-radius: 50px 0 50px 50px;
+    border: 2px solid #4a8057;
+    float: left;
+    margin: 0 30px 30px 0;
+}
+
+
+section {
+    padding: 50px 5%;
+    overflow: auto;
+}
+
+
+.hlavicka {
+    padding: 240px 50px;
+    background-image: url(obrazky/hlavicka.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #084e71d6;
+
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: inline-block;
+    color: rgb(224, 249, 239);
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu a:active {
+    background-color: #36694c;
+}
+
+
+/*кнопки посилання*/
+
+.tech-logo {
+    width: 3em;
+    height: 3em;
+    margin-left: 100px;
+}
