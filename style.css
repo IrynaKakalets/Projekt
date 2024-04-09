@@ -5,6 +5,7 @@ body {
     font-size: 15px;
     line-height: 1.5;
     margin: 0;
+
 }
 
 h1,
@@ -96,7 +97,7 @@ section {
 
 
 .hlavicka {
-    padding: 240px 50px;
+    padding: 250px 50px;
     background-image: url(obrazky/hlavicka.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -135,5 +136,110 @@ section {
 .tech-logo {
     width: 3em;
     height: 3em;
-    margin-left: 100px;
+    margin-left: 50px;
 }
+
+/* Кнопка вверх */
+
+.iptotop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 48px;
+    height: 48px;
+    display: block;
+    background: url(obrazky/top.png) 0 0 no-repeat;
+    z-index: 99999999;
+    transition: all 0.7s ease-in-out;
+}
+
+.iptotop:hover {
+    background: url(obrazky/top_hov.png) 0 0 no-repeat;
+}
+
+.iptotop.hidden {
+    bottom: -100px;
+
+}
+
+/* FOTOGALERIE */
+
+.fotogalerie {
+    margin-left: 20px;
+    margin-top: 40px;
+  
+}
+.foto img {
+    width: 100%;  
+    border: 2px solid #4a8057;
+}
+.foto .popisek {
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 12px;
+    padding: 4px 0 18px 0;
+    border-radius: 50px;  
+  
+}
+.foto .popisek-copy {
+    font-weight: 500;
+}
+@media screen and (min-width: 600px) {
+    .galerie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foto {
+        flex: 1 1 50%;
+        position: relative;
+        overflow: hidden;
+    }
+    .foto.posledni {
+        flex: 0 0 50%;
+    }
+    .foto .popisek {
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: rgb(250, 254, 253);
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 10px 0; 
+        background: rgba(120, 222, 240, 0.5);
+        transform: translateY(100%);
+        transition: transform .4s;
+    }
+    .foto:hover .popisek {
+        transform: translateY(0);
+    }
+    .popisek-copy a{
+        color: rgb(250, 254, 253);
+        font-weight: 700;
+    }
+    .foto img {
+        width: 100%;
+        display: block;
+        transition: transform .4s;
+    }
+    .foto:hover img {
+        transform: scale(1.2);
+    }
+}
+@media screen and (min-width: 1000px) {
+    .fotogalerie {
+        display: block;
+    }
+    .foto,
+    .foto.posledni {
+        flex: 1 1 33.33333333%;
+    }
+}
+
+
+
+
+
+
