@@ -86,8 +86,9 @@ a {
     width: 250px;
     border-radius: 50px 0 50px 50px;
     border: 2px solid #072e3db3;
-    float: left;
+    float: left; 
     margin: 0 30px 30px 0;
+
 }
 
 
