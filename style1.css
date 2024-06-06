@@ -1,6 +1,6 @@
 body {
   color: #1e5131;
-  background-color: #edf7f8;
+  background-color: #bcd5c6d6;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -23,9 +23,9 @@ h3 {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
-    color: rgb(13, 78, 74);
+    color: #113049;
     margin: 0;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
@@ -46,14 +46,14 @@ h1 {
 .button-home {
   width: 50px;
   height: 50px;
-  background-color: #8be4cf;
+  background-color: #759f95;
   border: none;
-  border-radius: 3px;
+  border-radius: 50px;
   box-shadow: 2px 2px 3px #02484b;
 }
 
 .button-home:hover {
-  background-color: #1cbb96;
+  background-color: #bcd5c6d6;
 }
 
 

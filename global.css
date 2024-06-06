@@ -2,10 +2,9 @@ body {
     color: #113049;
     background-color: #edf7f8;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
     margin: 0;
-
 }
 
 h1,
@@ -23,7 +22,7 @@ h3 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 75px;
     text-align: center;
     color: rgb(229, 244, 251);
     margin: 0;
@@ -59,10 +58,9 @@ a {
     padding: 20px 0;
 }
 
-
 .foto-orybach {
-    width: 450px;
-    height: 350px;
+    width: 350px;
+    height: 250px;
     border-radius: 10%;
     border: 2px solid #072e3db3;
     float: left;
@@ -72,10 +70,11 @@ a {
 .katalogryb img {
     width: 32%;
     border: 2px solid #072e3db3;
-    border-radius: 10px;
+    border-radius: 0px;
+    margin: 5px 5px 5px 5px;
 }
 
-.foto-úvod {
+.foto-peče {
     width: 350px;
     border-radius: 0 50px 50px 50px;
     float: right;
@@ -86,11 +85,9 @@ a {
     width: 250px;
     border-radius: 50px 0 50px 50px;
     border: 2px solid #072e3db3;
-    float: left; 
+    float: left;
     margin: 0 30px 30px 0;
-
 }
-
 
 section {
     padding: 50px 5%;
@@ -104,7 +101,6 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 
 .menu {
@@ -112,7 +108,6 @@ section {
     padding: 0;
     text-align: center;
     background-color: #072e3db3;
-
 }
 
 .menu li {
@@ -133,7 +128,7 @@ section {
 }
 
 
-/*кнопки посилання*/
+/*LOGO*/
 
 .tech-logo {
     width: 3em;
@@ -146,37 +141,43 @@ section {
 .fotogalerie {
     margin-left: 20px;
     margin-top: 40px;
-  
 }
+
 .foto img {
-    width: 100%;  
+    width: 100%;
     border: 2px solid #072e3db3;
 }
+
 .foto .popisek {
     font-family: 'Raleway', serif;
     font-weight: 700;
     line-height: 1.3;
     font-size: 12px;
     padding: 4px 0 18px 0;
-    border-radius: 50px;  
-  
+    border-radius: 50px;
+
 }
+
 .foto .popisek-copy {
     font-weight: 500;
 }
+
 @media screen and (min-width: 600px) {
     .galerie {
         display: flex;
         flex-wrap: wrap;
     }
+
     .foto {
         flex: 1 1 50%;
         position: relative;
         overflow: hidden;
     }
+
     .foto.posledni {
         flex: 0 0 50%;
     }
+
     .foto .popisek {
         position: absolute;
         text-align: center;
@@ -184,41 +185,41 @@ section {
         left: 0;
         width: 100%;
         color: rgb(250, 254, 253);
-        font-size: 15px;
+        font-size: 25px;
         line-height: 1.5;
-        padding: 10px 0; 
+        padding: 10px 0;
         background: rgba(120, 222, 240, 0.5);
         transform: translateY(100%);
         transition: transform .4s;
     }
+
     .foto:hover .popisek {
         transform: translateY(0);
     }
-    .popisek-copy a{
+
+    .popisek-copy a {
         color: rgb(250, 254, 253);
         font-weight: 700;
     }
+
     .foto img {
         width: 100%;
         display: block;
         transition: transform .4s;
     }
+
     .foto:hover img {
         transform: scale(1.2);
     }
 }
+
 @media screen and (min-width: 1000px) {
     .fotogalerie {
         display: block;
     }
+
     .foto,
     .foto.posledni {
         flex: 1 1 33.33333333%;
     }
 }
-
-
-
-
-
-
